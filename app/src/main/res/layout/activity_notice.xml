@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <!--상단메뉴부분-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/mark" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_marginTop="7dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOSSAE"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <ImageView
+                android:id="@+id/help"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:background="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--상단메뉴부분끝-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation = "vertical">
+
+            <!--1번 메뉴 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#dfdddd">
+                    <ToggleButton
+                        android:id="@+id/notice1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#dfdddd"
+                        android:gravity="left|center"
+                        android:textOff="    1. MOSSAE"
+                        android:textOn="    1. MOSSAE"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id = "@+id/notice1_ex"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#dfdddd"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="#666464"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="MOSSAE는 밤길에 보다 더 안전한 귀가를 위해 제작된 밤길안심서비스 어플입니다.
+MOSSAE는 보다 더 안전하게 'More Safely'를줄여 모쌔, MOSSAE라는 이름을 얻게 되었습니다."
+                        android:textSize="15dp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--1번 메뉴 -->
+
+            <!--2번 메뉴 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+                    <ToggleButton
+                        android:id="@+id/notice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:gravity="left|center"
+                        android:textOff="    2. 어플 사용법"
+                        android:textOn="    2. 어플 사용법"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id = "@+id/notice2_ex"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="#666464"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="MOSSAE는 처음 이용하는 이용자도 사용하기 쉽도록 제작되어있습니다. 하지만 혹시 어플 사용에 어려움을 느낄경우 화면의 우측상단에 위치한 ?버튼을 눌러주세요! 화면별로 사용가이드가 친절히 적혀있습니다.
+또한 어플을 사용하기전 설정창에서 카메라, 위치 권한등을 꼭 켜주세요!"
+                        android:textSize="15dp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--2번 메뉴 -->
+
+            <!--3번 메뉴 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#dfdddd">
+                    <ToggleButton
+                        android:id="@+id/notice3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#dfdddd"
+                        android:gravity="left|center"
+                        android:textOff="    3. 경찰서 / 지구대"
+                        android:textOn="    3. 경찰서 / 지구대"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id = "@+id/notice3_ex"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#dfdddd"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="#666464"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="경찰서 > 지구대 > 파출소
+특별시 및 광역시/도에 있는 17개의 지방경찰청 소속하에 차례대로 경찰서, 지구대, 파출소, 치안센터가 있습니다. 파출소는 2개 이하의 행정구역을 관할하며 약 2~30명 정도의 인원이 근무합니다. 지구대는 3개 이상의 행정구역을 관할하며 근무인원이 약 4~60명이 근무합니다.
+우리가 경찰관의 도움이 필요하면 112로 전화를 거는데 가장 먼저 출동하여 현장조치를 하는 인원이 바로 파출소 또는 지구대의 인원입니다. 상대적으로 경미한 사안의 경우 지구대와 파출소에서 자체적으로 처리를 하지만 절도, 폭행, 경제 범죄등 죄질이 무거운 중범죄의 경우 경찰서로 인계됩니다."
+                        android:textSize="15dp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--3번 메뉴 -->
+
+            <!--4번 메뉴 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+                    <ToggleButton
+                        android:id="@+id/notice4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:gravity="left|center"
+                        android:textOff="    4. MOSSAE 아이콘"
+                        android:textOn="    4. MOSSAE 아이콘"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id = "@+id/notice4_ex"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="#666464"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mark"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="- 위치를 나타내는 형상이 마치 풍선을 닮아 풍선모양으로 제작했습니다.
+- 비상상황에 쓰이는 어플임을 감안해 붉은색을 사용했습니다.
+- 어플의 이름인 MOSSAE의 M, S를 사용해 M은 웃는 듯한 눈과 코를, S는 입모양을 나타내어 제작했씁니다."
+                        android:textSize="15dp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--4번 메뉴 -->
+
+            <!--5번 메뉴 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#dfdddd">
+                    <ToggleButton
+                        android:id="@+id/notice5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#dfdddd"
+                        android:gravity="left|center"
+                        android:textOff="    5. 현위치오차"
+                        android:textOn="    5. 현위치오차"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id = "@+id/notice5_ex"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#dfdddd"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="#666464"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="현위치를 문자로 전송하는 기능에서 WIFI나 모바일데이터가 켜져있는지 꼭 확인해주세요! 인터넷이 연결되어있지 않으면 지도 화면에도 오류가 발생합니다.
+또한 인터넷이 잘 연결이 되어있더라도 간혹 현위치의 주소에 오차가 발생하는 경우도 있으나 다시 시도하면 해결되니 혹시 오차가 발생할 경우 어플을 다시 실행해주시기 바랍니다. 죄송합니다."
+                        android:textSize="15dp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--5번 메뉴 -->
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
